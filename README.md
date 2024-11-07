@@ -32,4 +32,4 @@
 
 ## more about PBS
 
-![PBS performance](https://www.ncbi.nlm.nih.gov/corecgi/tileshop/tileshop.fcgi?p=PMC3&id=277113&s=188&r=1&c=1)
+![PBS performance](https://www.biorxiv.org/content/biorxiv/early/2024/05/17/2024.05.14.594139/F1.large.jpg?width=800&height=600&carousel=1)
