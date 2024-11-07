@@ -15,8 +15,11 @@
 - GENECODE GTF (https://www.gencodegenes.org/human/release_38.html)
 - extract columns to be:
 `$ head grch38.exon.region
+
 1       exon    11869   12227   DDX11L1
+
 1       exon    12613   12721   DDX11L1
+
 1       exon    13221   14409   DDX11L1`
 
 ## Workflow
