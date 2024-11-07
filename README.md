@@ -27,4 +27,4 @@
 
 4. Normalize PBS and rowbind in the same population of interest, only keep the maximum PBS_normed among duplications `max_pbs_per_suppop.sh`, `all_max_pbs.sh`
 
-5. Plot `plot_pbs.py` input <superpop id>, <palette color tag>, <popid.gene.tag>, <y axis limit (80)>
+5. Plot `plot_pbs.py` input < superpop id >, < palette color tag >, < popid.gene.tag >, < y axis limit (80) >
