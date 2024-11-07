@@ -1,6 +1,6 @@
 ## Replication of 'A global reference for human genetic variation' in GRCh38
 
-As I found a flipped ancestral/derived allele in **TRBV9**, this repository is meant to replicate Figure 3b from the Nature article in GRCh38.
+This repository is meant to replicate Figure 3b from the Nature article in GRCh38.
 
 ![PBS distribution](https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fnature15393/MediaObjects/41586_2015_Article_BFnature15393_Fig3_HTML.jpg?as=webp)
 
