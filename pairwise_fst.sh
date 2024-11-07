@@ -16,6 +16,7 @@ do
 done
 
 # Define the super population
+# Maybe run one at a time
 super_pop="AFR AMR EUR EAS SAS"
 
 # Get populations under the same super population
@@ -25,6 +26,7 @@ pops=$(grep -w $super_pop $panel_file | cut -f2 | sort | uniq)
 mkdir -p ~/palmer_scratch/fst/$super_pop
 
 # Chromosomes to analyze
+# Maybe recheck before running
 chromosomes=(1:22)
 
 # Pairwise comparison for specified chromosomes
