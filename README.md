@@ -10,6 +10,10 @@
 
 - 1000 Genomes Project Release 20190312 (ftp://ftp.1000genomes.ebi.ac.uk/vol1/ftp/data_collections/1000_genomes_project/release/20190312_biallelic_SNV_and_INDEL)
 
+## Exon annotations
+
+- GENECODE GTF (https://www.gencodegenes.org/human/release_38.html)
+
 ## Workflow
 1. Make pairwise Fst within super populations `pairwise_fst.sh`,`check_missing_fst.sh`
 
