@@ -19,6 +19,8 @@
 `1       exon    11869   12227   DDX11L1`
 
 ## Workflow
+requirements: vcftools, bedtools
+
 1. Make pairwise Fst within super populations `pairwise_fst.sh`,`check_missing_fst.sh`
 
 2. Make one vs. all other populations out side of its own super population `one_outgroup_fst.sh`
