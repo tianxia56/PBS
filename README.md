@@ -31,5 +31,9 @@
 
 
 ## more about PBS
+The Precision and Power of Population Branch Statistics in Identifying the Genomic Signatures of Local Adaptation
+Max Shpak, Kadee N. Lawrence, John E. Pool doi: https://doi.org/10.1101/2024.05.14.594139
 
 ![PBS performance](https://www.biorxiv.org/content/biorxiv/early/2024/05/17/2024.05.14.594139/F1.large.jpg?width=800&height=600&carousel=1)
+
+
