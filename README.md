@@ -30,7 +30,7 @@
 5. Plot `plot_pbs.py` input < superpop id >, < palette color tag >, < popid.gene.tag >, < y axis limit (80) >
 
 
-## more about PBS
+## More about PBS
 The Precision and Power of Population Branch Statistics in Identifying the Genomic Signatures of Local Adaptation
 Max Shpak, Kadee N. Lawrence, John E. Pool doi: https://doi.org/10.1101/2024.05.14.594139
 
