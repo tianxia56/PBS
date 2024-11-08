@@ -1,4 +1,4 @@
-#!bin/bash
+#!/bin/bash
 #SBATCH --partition=day
 #SBATCH --time=1-00:00:00
 #SBATCH --nodes=1
