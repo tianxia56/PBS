@@ -14,6 +14,8 @@
 
 - GENECODE GTF (https://www.gencodegenes.org/human/release_38.html)
 - extract columns to be:
+  
+`zcat gencode.v37lift37.annotation.gtf.gz | awk -F'\t' '$3 == "exon" {split($9, a, "; "); for (i in a) if (a[i] ~ /gene_name/) {split(a[i], b, "\""); gene_name = b[2]} print substr($1, 4) "\t" $3 "\t" $4 "\t" $5 "\t" gene_name}' OFS='\t' > ../fst/grch37.exon.region`
 
 `$ head grch38.exon.region`
 `1       exon    11869   12227   DDX11L1`
