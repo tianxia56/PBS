@@ -1,7 +1,10 @@
+import os
 import pandas as pd
 import numpy as np
 from functools import reduce
-import os
+
+# Change the working directory
+os.chdir(os.path.expanduser('~/palmer_scratch/fst.37'))
 
 # Function to read fst files and return a DataFrame
 def read_fst(file_path):
@@ -12,16 +15,19 @@ def compute_pbs(fst1, fst2, fst3):
     return (-np.log(1 - fst1) - np.log(1 - fst2) + np.log(1 - fst3)) / 2
 
 # Define the super population
-# do one at a time, and bash to do batch
 super_pop = 'EUR'
 
 # Create a directory to save the PBS files
-pbs_dir = os.path.expanduser(f'~/palmer_scratch/fst/PBS.{super_pop}')
+pbs_dir = os.path.expanduser(f'~/palmer_scratch/fst.37/PBS.{super_pop}')
 os.makedirs(pbs_dir, exist_ok=True)
 
 # Get all .weir.fst files for the super population
-fst_dir = os.path.expanduser(f'~/palmer_scratch/fst/{super_pop}')
+fst_dir = os.path.expanduser(f'~/palmer_scratch/fst.37/{super_pop}')
 fst_files = [f for f in os.listdir(fst_dir) if f.endswith('.weir.fst')]
+
+# Print the directories to debug
+print(f"fst_dir: {fst_dir}")
+print(f"pbs_dir: {pbs_dir}")
 
 # Iterate over each chromosome from 1 to 22
 for chr_num in range(1, 23):
@@ -41,8 +47,13 @@ for chr_num in range(1, 23):
 
         # Define file paths for the current population pair and chromosome
         eur_file = os.path.join(fst_dir, f'{pop1}.{pop2}.chr{chr_num}.weir.fst')
-        outgroup_pop2_file = os.path.join(f'./outgroup/{pop2}.merged_others.chr{chr_num}.weir.fst')
-        outgroup_pop1_file = os.path.join(f'./outgroup/{pop1}.merged_others.chr{chr_num}.weir.fst')
+        outgroup_pop2_file = os.path.expanduser(f'~/palmer_scratch/fst/outgroup/{pop2}.merged_others.chr{chr_num}.weir.fst')
+        outgroup_pop1_file = os.path.expanduser(f'~/palmer_scratch/fst/outgroup/{pop1}.merged_others.chr{chr_num}.weir.fst')
+
+        # Print the file paths to debug
+        print(f"Checking file: {eur_file}")
+        print(f"Checking file: {outgroup_pop2_file}")
+        print(f"Checking file: {outgroup_pop1_file}")
 
         # Check if the files exist before proceeding
         if not (os.path.exists(eur_file) and os.path.exists(outgroup_pop2_file) and os.path.exists(outgroup_pop1_file)):
@@ -116,4 +127,3 @@ for file in fst_files:
         print(f"Combined PBS file is empty: {combined_pbs_file}")
 
 print("All PBS computations completed and combined into single text files per population pair.")
-
