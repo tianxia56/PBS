@@ -33,6 +33,11 @@ requirements: vcftools, bedtools
 
 5. Plot `plot_pbs.py` input < superpop id >, < palette color tag >, < popid.gene.tag >, < y axis limit (80) >
 
+## genomewide GRCh37 and GRCH38 rsid mapping
+
+https://ftp.ncbi.nlm.nih.gov/snp/organisms/
+
+`make-snp-pos.sh`
 
 ## More about PBS
 The Precision and Power of Population Branch Statistics in Identifying the Genomic Signatures of Local Adaptation
